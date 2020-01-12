@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Phil's Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <div id="calculator">
+      <p id="calculatorDisplay"></p>
+
+      <div id="inputdiv">
+        <div class="row">
+          <button type="button" name="clear" value="clear" class="wideButton" id="clearButton" onclick="clrClick(value)">
+            <p class="functionText">CLR</p></button>
+          <button type="button" name="delete" value="delete" class="wideButton" onclick="delClick(value)">
+          <p class="functionText">DEL</p></button>
+        </div>
+        <div class="row">
+          <button type="button" name="seven" value="7" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">7</p></button>
+          <button type="button" name="eight" value="8" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">8</p></button>
+          <button type="button" name="nine" value="9" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">9</p></button>
+          <button type="button" name="divide" value="/" class="functionButton" onclick="opClick(value)">
+            <p class="functionText">/</p></button>
+        </div>
+        <div class="row">
+          <button type="button" name="four" value="4" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">4</p></button>
+          <button type="button" name="five" value="5" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">5</p></button>
+          <button type="button" name="six" value="6" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">6</p></button>
+          <button type="button" name="multiply" value="x" class="functionButton" onclick="opClick(value)">
+            <p class="functionText">x</p></button>
+        </div>
+        <div class="row">
+          <button type="button" name="one" value="1" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">1</p></button>
+          <button type="button" name="two" value="2" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">2</p></button>
+          <button type="button" name="three" value="3" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">3</p></button>
+          <button type="button" name="plus" value="+" class="functionButton" onclick="opClick(value)">
+            <p class="functionText">+</p></button>
+        </div>
+        <div class="row">
+          <button type="button" name="decimal" value="decimal" class="numberButton" onclick="decimalClick()">
+            <p class="numberText">.</p></button>
+          <button type="button" name="zero" value="0" class="numberButton" onclick="numClick(value)">
+            <p class="numberText">0</p></button>
+          <button type="button" name="equals" value="=" class="functionButton" onclick="eqClick()">
+            <p class="functionText">=</p></button>
+          <button type="button" name="minus" value="-" class="functionButton" onclick="opClick(value)">
+            <p class="functionText">-</p></button>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
